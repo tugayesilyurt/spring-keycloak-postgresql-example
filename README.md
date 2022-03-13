@@ -10,16 +10,16 @@ We can easily run the whole with only a single command:
 
 - **Keycloak**
 
-![Keycloak](https://github.com/tugayesilyurt/spring-https-example/blob/main/assets/role.PNG)
+![Keycloak](https://github.com/tugayesilyurt/spring-keycloak-postgresql/blob/main/assets/role.PNG)
 
 - **Keycloak Configuration**
 
-![Keycloak Configuration](https://github.com/tugayesilyurt/spring-https-example/blob/main/assets/keycloak-configuration.PNG)
+![Keycloak Configuration](https://github.com/tugayesilyurt/spring-keycloak-postgresql/blob/main/assets/keycloak-configuration.PNG)
 
 - **Keycloak PostgreSql**
 
-![Keycloak db](https://github.com/tugayesilyurt/spring-https-example/blob/main/assets/keycloak-db.PNG)
+![Keycloak db](https://github.com/tugayesilyurt/spring-keycloak-postgresql/blob/main/assets/keycloak-db.PNG)
 	
 - **JWT**
 
-![Jwt](https://github.com/tugayesilyurt/spring-https-example/blob/main/assets/jwt.PNG)
+![Jwt](https://github.com/tugayesilyurt/spring-keycloak-postgresql/blob/main/assets/jwt.PNG)
