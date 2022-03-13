@@ -1,0 +1,9 @@
+server:
+  port: 5000
+ 
+keycloak:
+  url: http://localhost:8080/auth
+  realm: tugay-example
+  username: admin
+  password: 123456
+  jwkSetUri: http://localhost:8080/auth/realms/tugay-example/protocol/openid-connect/certs

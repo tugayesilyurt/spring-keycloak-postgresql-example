@@ -1,0 +1,142 @@
+{
+	"info": {
+		"_postman_id": "c9b60f1a-94ac-4d10-9810-bd7587b34653",
+		"name": "keycloak",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get-token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"tugay\",\r\n    \"password\" : \"123456\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:5000/v1/user/token",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"v1",
+						"user",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create-user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"tugay\",\r\n    \"password\" : \"123456\",\r\n    \"email\" : \"htyesilyurt@gmail.com\",\r\n    \"firstname\" : \"Hüseyin Tugay\",\r\n    \"lastname\" : \"Yeşilyurt\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:5000/v1/user/create",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"v1",
+						"user",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test-role",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzUxMiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJtQzBxVVFhTm9iTGFaVnVhTFRWaUNncGNMNExWejVTanEyZ1lTeVJSNFE4In0.eyJleHAiOjE2NDcyMDMwMzYsImlhdCI6MTY0NzE2NzAzNiwianRpIjoiNjQ5MTNjNjItOTllNC00YmQyLTgxOTktYmViNWE4YjNmYmQ4IiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL2F1dGgvcmVhbG1zL3R1Z2F5LWV4YW1wbGUiLCJzdWIiOiIyZDM1MDhhNS1lYzUyLTQ0ZTctYmIxNy01ZWNiNjkxMjMxMDgiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJhZG1pbi1jbGkiLCJzZXNzaW9uX3N0YXRlIjoiZjFjMmEzYzUtNzcyZC00ZDc4LWFmMmItNzE1ZTIxYWQ1NzBlIiwiYWNyIjoiMSIsInJlc291cmNlX2FjY2VzcyI6eyJhZG1pbi1jbGkiOnsicm9sZXMiOlsidHVnYXktcm9sZSJdfX0sInNjb3BlIjoicHJvZmlsZSBlbWFpbCIsInNpZCI6ImYxYzJhM2M1LTc3MmQtNGQ3OC1hZjJiLTcxNWUyMWFkNTcwZSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwibmFtZSI6IkjDvHNleWluIFR1Z2F5IFllxZ9pbHl1cnQiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJ0dWdheSIsImdpdmVuX25hbWUiOiJIw7xzZXlpbiBUdWdheSIsImZhbWlseV9uYW1lIjoiWWXFn2lseXVydCIsImVtYWlsIjoiaHR5ZXNpbHl1cnRAZ21haWwuY29tIn0.SQ55qAXbofAmgjUcDJTYSbleY5muOLfW-gjb-rGq_JSWx81xNN2Ds4AA8ilXxw3muCCgbFriohPoVyYeWyBr3WeI_gF5Sikm-7cFuchM4dv5g-Oz6Xwo8iuktk8X5E1t5lvX4GshDg71zt00NrH8cPJBHTqui26WqaUV-j_efzuV6V7hBGnF-DHU5tepa_tBXW4QzCFK0SZ15JgXDQC2warghHitHd1GlLYnHp6i6ZIxXnS8EqDTXOjziOmN9hurHpmqcs8rCAPWFnPgwh6U1C-vLcLG2r9tB0Ji9Vgi6W4ZWmbrXYqYBbs2PdujBNreDxZYGkj84Orpb3iYEGRoMQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:5000/v1/user/test/role",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"v1",
+						"user",
+						"test",
+						"role"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "certificate",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/auth/realms/tugay-example/protocol/openid-connect/certs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"realms",
+						"tugay-example",
+						"protocol",
+						"openid-connect",
+						"certs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "openid-configuration",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/auth/realms/tugay-example/.well-known/openid-configuration",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"realms",
+						"tugay-example",
+						".well-known",
+						"openid-configuration"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
